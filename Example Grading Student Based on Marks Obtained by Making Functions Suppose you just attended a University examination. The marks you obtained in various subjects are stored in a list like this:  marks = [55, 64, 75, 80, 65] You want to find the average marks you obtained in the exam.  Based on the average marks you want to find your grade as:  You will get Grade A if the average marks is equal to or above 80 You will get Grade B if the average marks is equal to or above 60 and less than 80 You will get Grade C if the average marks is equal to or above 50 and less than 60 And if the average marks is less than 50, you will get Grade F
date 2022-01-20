@@ -1,0 +1,26 @@
+def finding_of_average_marks(marks):
+    sum_of_marks = sum(marks)
+    total_subj = len(marks)
+  
+    average_marks = sum_of_marks / total_subj
+    
+    return average_marks
+   
+def compute_grade(average_marks):
+    if average_marks >= 80:
+         grade = 'A'
+    elif average_marks >= 60:
+         grade = 'B'
+    elif average_marks >= 50:
+        grade = 'c'
+    else:
+         grade = 'F'
+         
+    return grade     
+marks = [55, 64, 75, 80, 65]
+average_marks = finding_of_average_marks(marks)
+grade = compute_grade(average_marks)
+
+
+print('your average marks is',average_marks)
+print('your grade is',grade)
